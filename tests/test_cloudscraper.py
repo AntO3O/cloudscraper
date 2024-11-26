@@ -23,7 +23,7 @@ class TestCloudScraper:
     # ------------------------------------------------------------------------------- #
 
     @mockCloudflare(
-        fixture='js_challenge-27-05-2020.html',
+        fixture='https://k2s.cc/files#',
         payload=OrderedDict([
             ('jschl_answer', '102.7365930923'),
             ('pass', '1590526864.279-GCnY0hKdNH'),
@@ -31,7 +31,7 @@ class TestCloudScraper:
             ('r', 'b7f071b2f22b5dfecd144198317929d3f7c8d3d271c169e7676a42042c3581ed')
         ])
     )
-    def test_js_challenge_27_05_2020(self, **kwargs):
+    def test_https://k2s.cc/files(self, **kwargs):
         # test interpreters
         for interpreter in ['native', 'nodejs', 'js2py']:
             print('Testing {}'.format(interpreter))
